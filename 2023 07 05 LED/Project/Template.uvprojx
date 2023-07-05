@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F40_41xxx</Define>
               <Undefine></Undefine>
-              <IncludePath>..\STARTUP;..\Libraries\inc;..\User</IncludePath>
+              <IncludePath>..\Libraries\inc;..\STARTUP;..\User;..\User\LED</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -639,6 +639,16 @@
               <FileName>stm32f4xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\stm32f4xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>bsp_led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\LED\bsp_led.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\stm32f4xx_conf.h</FilePath>
             </File>
           </Files>
         </Group>

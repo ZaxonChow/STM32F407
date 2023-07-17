@@ -141,7 +141,7 @@ void Modbus_01_Solve(void)
 		//溶解氧
 		temp[0] = ((RS485_RX_BUFF[5] << 24) | (RS485_RX_BUFF[6] << 16) | (RS485_RX_BUFF[3] << 8) | RS485_RX_BUFF[4]);
 		printf("%2x %2x %2x %2x \r\n", RS485_RX_BUFF[5], RS485_RX_BUFF[6], RS485_RX_BUFF[3], RS485_RX_BUFF[4]);
-		Ox_Value = *((float*)&temp[0]);
+		Ox_Value = *((float*)&temp[0]);		//将接收的数值转换为浮点型
 		printf("Ox_Value = %.3f mg/L \r\n", Ox_Value);
 	}
 }
